@@ -5,7 +5,7 @@ struct ContentView: View {
     var body: some View {
         TabView {
                     NavigationView {
-                        MainView()
+                        MemoryShufflerView()
                     }
                     .tabItem {
                         Label("Main", systemImage: "list.bullet")

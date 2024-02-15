@@ -6,7 +6,7 @@ struct MemoryPoolView: View {
     @FetchRequest(
         entity: Memory.entity(),
         sortDescriptors: [
-            NSSortDescriptor(keyPath: \Memory.date, ascending: true)
+            NSSortDescriptor(keyPath: \Memory.date, ascending: false)
         ],
         animation: .default
     )

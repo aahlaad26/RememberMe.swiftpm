@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct MainView: View {
+struct MemoryShufflerView: View {
     @Environment(\.managedObjectContext) private var viewContext
     
     @FetchRequest(
@@ -61,5 +61,5 @@ struct MainView: View {
     }
 }
 #Preview {
-    MainView()
+    MemoryShufflerView()
 }
