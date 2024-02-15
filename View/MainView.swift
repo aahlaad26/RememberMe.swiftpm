@@ -22,19 +22,16 @@ struct MainView: View {
     var body: some View {
         
         
-        ScrollView{
-            NavigationView {
-                List {
+        
+            ScrollView {
+                
                     
                     if let memory = selectedMemory {
                         MemoryListRow(memory: memory)
-                    }
-                }
-                .listStyle(PlainListStyle())
 
-                .sheet(isPresented: $showNewMemory) {
-                    NewMemoryView(isShow: self.$showNewMemory)
-                        .offset(y:30)
+                
+
+                
                 }
             }   .navigationBarTitle("Shuffled Memories")
                 .navigationBarItems(
@@ -51,8 +48,11 @@ struct MainView: View {
                             .foregroundColor(.accentColor)
                     }
                 )
-
-        }.onAppear {
+                .sheet(isPresented: $showNewMemory) {
+                    NewMemoryView(isShow: self.$showNewMemory)
+                        .offset(y:30)
+        }
+        .onAppear {
 
             if let firstMemory = memories.first {
                 self.selectedMemory = firstMemory
