@@ -15,23 +15,12 @@ struct MemoryShufflerView: View {
     @State private var showNewMemory: Bool = false
     @State private var searchText: String = ""
     @State private var selectedMemory: Memory?
-    
 
-   
-    
     var body: some View {
-        
-        
-        
-            ScrollView {
-                
-                    
+        ScrollView {
                     if let memory = selectedMemory {
                         MemoryListRow(memory: memory)
 
-                
-
-                
                 }
             }   .navigationBarTitle("Shuffled Memories")
                 .navigationBarItems(

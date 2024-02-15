@@ -6,7 +6,7 @@ struct MemoryPoolView: View {
     @FetchRequest(
         entity: Memory.entity(),
         sortDescriptors: [
-            NSSortDescriptor(keyPath: \Memory.date, ascending: false)
+            NSSortDescriptor(keyPath: \Memory.date, ascending: true)
         ],
         animation: .default
     )
@@ -28,7 +28,7 @@ struct MemoryPoolView: View {
                     .onDelete(perform: deleteMemory)
 
                 }
-                .listStyle(.sidebar)
+                .listStyle(.plain)
                 if memories.count == 0 {
                     Image("no-data")
                         .resizable()

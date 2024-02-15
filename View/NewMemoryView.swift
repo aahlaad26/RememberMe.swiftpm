@@ -34,7 +34,7 @@ struct NewMemoryView: View {
                         }) {
                             Image(systemName: "xmark.circle.fill")
                                 .font(.title3)
-                                .foregroundColor(.orange)
+                                .foregroundColor(.blue)
                         } //: Button
                     } //: HStack
                     
@@ -75,7 +75,7 @@ struct NewMemoryView: View {
                             .foregroundColor(.white)
                             .padding()
                             .frame(maxWidth: .infinity)
-                            .background(.orange)
+                            .background(.blue)
                     } //: Button
                     .cornerRadius(10)
                     .padding(.vertical)
