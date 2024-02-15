@@ -8,19 +8,19 @@ import PackageDescription
 import AppleProductTypes
 
 let package = Package(
-    name: "RemeberMe",
+    name: "RememberMe",
     platforms: [
         .iOS("16.0")
     ],
     products: [
         .iOSApplication(
-            name: "RemeberMe",
+            name: "RememberMe",
             targets: ["AppModule"],
             bundleIdentifier: "in.edu.srmist.TodoList",
             teamIdentifier: "RHL26U4H7P",
             displayVersion: "1.0",
             bundleVersion: "1",
-            appIcon: .placeholder(icon: .tv),
+            appIcon: .placeholder(icon: .openBook),
             accentColor: .presetColor(.blue),
             supportedDeviceFamilies: [
                 .pad,
