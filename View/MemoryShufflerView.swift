@@ -22,7 +22,7 @@ struct MemoryShufflerView: View {
                         MemoryListRow(memory: memory)
 
                 }
-            }   .navigationBarTitle("Shuffled Memories")
+            }   .navigationBarTitle("Shuffled Memory")
                 .navigationBarItems(
                     leading: Button(action: {
                         self.selectedMemory = memories.filter { searchText.isEmpty ? true : $0.name.contains(searchText) }.randomElement()

@@ -8,7 +8,7 @@ struct ContentView: View {
                         MemoryShufflerView()
                     }
                     .tabItem {
-                        Label("Main", systemImage: "list.bullet")
+                        Label("Memory Shuffler", systemImage: "shuffle")
                     }
 
                     NavigationView {
